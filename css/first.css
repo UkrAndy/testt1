@@ -1,0 +1,93 @@
+.wrapper {
+  width: 100%;
+  min-height: 500px;
+  border-color: blue;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 800px) and (max-height: 200px) {
+  .wrapper {
+    border-color: red;
+  }
+}
+header {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+header h1 {
+  color: #5f9bce;
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+header div {
+  font-size: 16px;
+}
+header button {
+  background-color: #5f9bce;
+  width: 214px;
+  height: 60px;
+  margin-top: 24px;
+  border: none;
+}
+header img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.rec-card header {
+  display: flex;
+}
+
+.rate svg {
+  width: 10px;
+}
+/* ------------------------ */
+.rec-card {
+  height: 200px;
+  min-width: 100px;
+  max-width: 200px;
+  border: 2px solid green;
+}
+.rec-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h3 {
+  text-align: center;
+}
+/* ---------------- */
+.galery img {
+  width: 100%;
+}
+
+@media (min-width: 641px) and (max-width: 899px) {
+  .galery img {
+    width: 49%;
+  }
+}
+
+@media (min-width: 900px) {
+  .galery img {
+    width: 33%;
+  }
+}
+/* -------------- */
+.slider {
+  position: relative;
+}
+.title {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
